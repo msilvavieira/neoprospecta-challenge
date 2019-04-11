@@ -3,7 +3,7 @@ My attempt at the backend challenge for Neoprospecta!
 
 To populate the database:
 
-  1. activate the virtualenv
+  1. make activate a virtualenv
   2. pip install -r requirements.txt
   3. ./manage.py getfasta
 
