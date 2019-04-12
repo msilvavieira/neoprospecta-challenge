@@ -1,7 +1,6 @@
 from django.db import models
 
 
-
 class Entry(models.Model):
     access_id = models.CharField(max_length=100, unique=True)
     kingdom = models.ForeignKey('Kingdom', on_delete=models.CASCADE)
