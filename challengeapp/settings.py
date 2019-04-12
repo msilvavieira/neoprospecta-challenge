@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '^8^fd_b)&jk0$z)!v2q$v+&s@zezyhyy+yuu2=k#!orox%f96^'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -40,18 +40,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'api',
 ]
-
-REST_FRAMEWORK = {
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    'PAGE_SIZE': 10
-    #'PAGE_SIZE': 10,
-    #'DEFAULT_RENDERER_CLASSES': (
-    #    'rest_framework.renderers.JSONRenderer',
-    #),
-    #'DEFAULT_PARSER_CLASSES': (
-    #    'rest_framework.parsers.JSONParser',
-    #)
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
