@@ -8,7 +8,7 @@ class Entry(models.Model):
     sequence = models.CharField(max_length=100)
 
     def __str__(self):
-        return ' - '.join([self.access_id, self.kingdom.label, self.species.label, self.sequence])
+        return ' | '.join([self.access_id, self.kingdom.label, self.species.label, self.sequence])
 
     class Meta:
         ordering = ('access_id',)
